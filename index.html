@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ekocean - Conservación Marina</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #e9f9ff;
+      color: #333;
+    }
+
+
+
+
+
+
+
+
+    header {
+      background: linear-gradient(to right, #0077b6, #0096c7, #00b4d8);
+      color: white;
+      text-align: center;
+      padding: 30px 20px 50px;
+    }
+
+
+
+
+
+
+
+
+    header img {
+      width: 150px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+
+
+
+
+
+
+
+    header h1 {
+      margin: 10px 0 5px;
+      font-size: 2.5em;
+    }
+
+
+
+
+
+
+
+
+    header p {
+      font-size: 1.1em;
+      margin: 0;
+    }
+
+
+
+
+
+
+
+
+    nav {
+      background-color: #023e8a;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+
+
+
+
+
+
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+
+
+
+
+
+
+
+    nav a:hover {
+      color: #00b4d8;
+    }
+
+
+
+
+
+
+
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+
+
+
+
+
+
+
+    h2 {
+      color: #0077b6;
+      border-bottom: 2px solid #00b4d8;
+      padding-bottom: 5px;
+      text-align: center;
+    }
+
+
+
+
+
+
+
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+
+
+
+
+
+
+
+    .mision-vision {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+
+
+
+
+
+
+
+    .mision, .vision {
+      background-color: #f0fbff;
+      border-left: 6px solid #00b4d8;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+
+
+
+
+
+
+
+    .mision h3, .vision h3 {
+      color: #0077b6;
+      text-align: center;
+    }
+
+
+
+
+
+
+
+
+    .foda-cuadro {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+
+
+
+
+
+
+
+    .cuadro {
+      border-radius: 10px;
+      padding: 20px;
+      color: white;
+      text-align: justify;
+      font-size: 1em;
+    }
+
+
+
+
+
+
+
+
+    .fortalezas { background-color: #02a1bd; }
+    .oportunidades { background-color: #02a1bd; }
+    .debilidades { background-color: #02a1bd; }
+    .amenazas { background-color: #02a1bd; }
+
+
+
+
+
+
+
+
+    footer {
+      background-color: #02a1bd;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      font-size: 0.95em;
+    }
+
+
+
+
+
+
+
+
+    /* --- BOTÓN WHATSAPP --- */
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+      z-index: 1000;
+    }
+
+
+
+
+
+
+
+
+    .whatsapp-btn:hover {
+      transform: scale(1.1);
+    }
+
+
+
+
+
+
+
+
+    .whatsapp-icon {
+      font-size: 32px;
+    }
+
+
+
+
+
+
+
+
+    @media (max-width: 750px) {
+      .foda-cuadro, .mision-vision {
+        grid-template-columns: 1fr;
+      }
+
+
+
+
+
+
+
+
+      header img {
+        width: 120px;
+      }
+    }
+  </style>
+  <!-- Ícono de WhatsApp desde CDN -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+  <header>
+    <img src="ekocean.jpg" alt="Logo Ekocean">
+    <h1>Ekocean</h1>
+    <p>For Healthy Oceans | Conservación y Sostenibilidad Marina</p>
+  </header>
+
+
+
+
+
+
+
+
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="indexnum2.html">Importancia marina</a>
+    <a href="indexnum3.html">Contaminación marina </a>
+    <a href="indexnum4.html">Productos sostenibles</a>
+    <a href="indexnum5.html">Impacto positivo</a>
+  </nav>
+
+
+
+
+
+
+
+
+  <main id="nosotros">
+    <h2>¿Quiénes Somos?</h2>
+    <p>
+      Somos <strong>Ekocean</strong>, una empresa comprometida con la conservación marina, enfocada en productos sostenibles
+      que no dañan el medio ambiente. Nuestro enfoque es innovador y nuestra misión clara nos permite trabajar en conjunto
+      con socios y comunidades para generar un impacto positivo.
+    </p>
+
+
+
+
+
+
+
+
+    <section id="misionvision" class="mision-vision">
+      <div class="mision">
+        <h3>Misión</h3>
+        <p>
+          Nuestra misión es proteger los ecosistemas marinos mediante el desarrollo de productos sostenibles,
+          la educación ambiental y la colaboración con comunidades costeras. Buscamos generar soluciones
+          que equilibren la innovación con la conservación del océano, promoviendo prácticas responsables
+          que beneficien al planeta y a las futuras generaciones.
+        </p>
+      </div>
+
+
+
+
+
+
+
+
+      <div class="vision">
+        <h3>Visión</h3>
+        <p>
+          Ser una empresa líder en sostenibilidad marina reconocida a nivel internacional por su compromiso,
+          innovación y resultados medibles en la conservación del océano. Aspiramos a inspirar un cambio global
+          hacia un consumo más consciente y ecológico que garantice océanos saludables para todos.
+        </p>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+    <section id="foda">
+      <h2>Análisis FODA</h2>
+
+
+
+
+
+
+
+
+      <div class="foda-cuadro">
+        <div class="cuadro fortalezas">
+          <h3>Fortalezas</h3>
+          <p>
+            - Compromiso con la conservación marina.<br>
+            - Enfoque innovador y sostenible.<br>
+            - Trabajo colaborativo con comunidades y aliados.<br>
+            - Misión clara y valores sólidos.
+          </p>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="cuadro oportunidades">
+          <h3>Oportunidades</h3>
+          <p>
+            La creciente conciencia ambiental y la demanda de productos sostenibles nos abren puertas
+            para acceder a financiamiento, alianzas estratégicas y expandir nuestra presencia tanto
+            a nivel nacional como internacional.
+          </p>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="cuadro debilidades">
+          <h3>Debilidades</h3>
+          <p>
+            Contamos con recursos limitados para proyectos a gran escala y necesitamos fortalecer
+            nuestra presencia en el mercado. Además, la innovación constante requiere respaldo sólido
+            y podemos enfrentar limitaciones en infraestructura y equipamiento.
+          </p>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="cuadro amenazas">
+          <h3>Amenazas</h3>
+          <p>
+            Cambios regulatorios, competencia con empresas más grandes, impactos climáticos y
+            falta de apoyo o colaboración pueden afectar nuestras actividades y crecimiento.
+            También existe el riesgo de desinformación que limite la aceptación de nuestros proyectos.
+          </p>
+         
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+
+
+
+
+
+  <footer id="contacto">
+    <p>© 2025 Ekocean | For Healthy Oceans | Todos los derechos reservados</p>
+    <p>Contacto: info@ekocean.com | Instagram: @ekocean | Tel: +52 55 1234 5678</p>
+  </footer>
+
+
+
+
+
+
+
+
+  <!-- Botón flotante de WhatsApp -->
+  <a class="whatsapp-btn" href="https://wa.me/525512345678" target="_blank" title="Contáctanos por WhatsApp">
+    <i class="fab fa-whatsapp whatsapp-icon"></i>
+  </a>
+
+
+
+
+
+
+
+
+</body>
+</html>
